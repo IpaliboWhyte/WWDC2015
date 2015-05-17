@@ -1,0 +1,451 @@
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.section-header {
+
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    display: table-cell; 
+    vertical-align: middle
+}
+
+header {
+
+    display:table;
+    background-color: #724CF9;
+    height: 65px;
+    width: 100%;
+
+}
+
+.section-apps-panel {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+}
+
+.panel-prop {
+    float: left;
+    position: relative;
+    height: 667px;
+    width: 50%;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.iphone-vector {
+    height: 100%;
+    width: 375px;
+    background: url("../img/IMG_1710.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+}
+
+.panel-details{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.user-details-profile_pic {
+    float: left;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    /*
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background: url("../img/zohan.jpg");
+    */
+}
+
+.user-details-name {
+    height: 50px;
+    width: 300px;
+    margin: 5px;
+    font-size: 35px;
+    color: rgb(54,57,70);
+}
+
+.user-social-links {
+    width: 300px;
+    height: 50px;
+    margin: 5px;
+}
+
+.iphone-home {
+    text-align: center;
+    display: inline-block;
+}
+
+#iphone_home_button {
+    display: table;
+    width: 70px;
+    height: 70px;
+    border: 5px solid rgba(26,28,39,0.07);
+    background-color: rgba(26,28,39,0.05);
+    border-radius: 40px;
+    margin-top: 100px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+#iphone_home_button:hover {
+    background-color: rgb(114,76,249);
+    transform: scale(1.5,1.5);
+}
+
+body:hover+ i{
+    background-color: red;
+}
+
+.app-box {
+    width: 75px;
+    height: 75px;
+    float: left;
+    display: inline-block;
+    margin: 9.375px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgba(26,28,39,0.5)
+}
+
+.app-detail {
+    display: inline-block;
+    /*opacity: 0;*/
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 1000;
+    transform:scale(0,0);
+    /*transform-origin: 30px 30px;*/
+}
+
+.app-reveal-prop {
+    /*opacity: 1;*/
+    /*z-index: 1000;*/
+    transform:scale(1,1);
+}
+
+.app-box-name {
+    position: relative;
+    bottom: -80px;
+    font-size: 10px;
+    color: white;
+}
+
+.app-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    padding: 50px;
+    font-size: 10px;
+    color: rgb(54,57,70);
+    /*background-color: #100B22;*/
+}
+
+ul {
+    list-style-type: none;
+}
+
+i {
+    margin: 10px;
+    color: rgba(26,28,39,0.3);
+    transition: all .1s ease-in-out;
+}
+
+i.icon-home:hover {
+    color: #ECEBF1;
+}
+
+i:hover {
+    color: rgba(26,28,39,0.6);
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
