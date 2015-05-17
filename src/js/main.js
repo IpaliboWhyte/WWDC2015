@@ -16,10 +16,12 @@ var activeApp;
 
 function handleHomeClick (){
 	hideActiveApp(activeApp);
+	hideHomeButton();
 };
 
 function handleAppClick (element){
 	showApp(element);
+	showHomeButton();
 }
 
 function showApp (app) {
@@ -32,4 +34,12 @@ function hideActiveApp (activeApp) {
 
 	$(".app-detail").removeClass("app-reveal-prop");
 
+}
+
+function showHomeButton () {
+	$(".section-iPhone-Homebutton").addClass("iPhone-Homebutton-reveal-prop");
+}
+
+function hideHomeButton () {
+	$(".section-iPhone-Homebutton").removeClass("iPhone-Homebutton-reveal-prop");
 }
