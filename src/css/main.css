@@ -140,6 +140,13 @@ header {
     overflow: hidden;
 }
 
+.iPhone-container {
+    height: auto;
+    width: auto;
+    overflow: auto;
+
+}
+
 .panel-details{
     display: table-cell;
     vertical-align: middle;
@@ -180,6 +187,23 @@ header {
 .iphone-home {
     text-align: center;
     display: inline-block;
+}
+
+.app-nav-container {
+    text-align: center;  
+    position: absolute;
+    z-index: 3000; 
+    right: 0px;
+    bottom: 100px;
+    transition: all .2s ease-in-out;
+    visibility: hidden;
+    z-index: 0;
+    opacity: 0;
+}
+
+.app-nav-reveal-prop {
+    visibility: visible;
+    opacity: 1;
 }
 
 .section-iPhone-Homebutton {
@@ -265,6 +289,8 @@ header {
     width: 100%;
     height: 100%;
     padding-top: 30px;
+    float: left;
+    display: inline;
 }
 
 footer {
@@ -281,9 +307,14 @@ ul {
 }
 
 i {
-    margin: 10px;
-    color: rgba(26,28,39,0.3);
+    font-size: 35px;
+    margin: 5px;
+    color: rgba(26,28,39,0.1);
     transition: all .1s ease-in-out;
+}
+
+i.icon-home {
+    font-size: 20px;
 }
 
 i.icon-home:hover {
