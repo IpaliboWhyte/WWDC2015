@@ -241,6 +241,7 @@ body:hover+ i{
     bottom: -80px;
     font-size: 10px;
     color: white;
+    font-weight: 0px;
 }
 
 .app-container {
@@ -273,15 +274,8 @@ i.icon-home:hover {
 }
 
 i:hover {
-    color: rgba(26,28,39,0.6);
+    color: rgba(26,28,39,0.9);
 }
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes

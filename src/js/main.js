@@ -1,3 +1,5 @@
+var activeApp;
+
 (function(){
 
 	$('#iphone_home_button').on('click', function(){
@@ -13,7 +15,7 @@
 }());
 
 function handleHomeClick (){
-	alert("Hello");
+	hideActiveApp(activeApp);
 };
 
 function handleAppClick (element){
@@ -22,20 +24,12 @@ function handleAppClick (element){
 
 function showApp (app) {
 
-alert("func");
+	$(".app-detail").addClass("app-reveal-prop"); 
 
-	var position = $(this).offset();
+}
 
-		var xPosSTR = position.left+'px';
-		var yPosSTR = position.top+'px';
+function hideActiveApp (activeApp) {
 
-		$('.app-detail').css({
-			'transform-origin':         '' + xPosSTR + ' ' + yPosSTR + ' 0px',
-			'-webkit-transform-origin': '' + xPosSTR + ' ' + yPosSTR + ' 0px'
-		});
-
-		$('.app-detail').bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){  
-		    $(".app-detail").addClass("app-reveal-prop"); 
-		 });
+	$(".app-detail").removeClass("app-reveal-prop");
 
 }
