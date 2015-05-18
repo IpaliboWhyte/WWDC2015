@@ -291,6 +291,12 @@ header {
     padding-top: 30px;
     float: left;
     display: inline;
+    transform:scale(0,0);
+    transition: all .2s ease-in-out;
+}
+
+.app-container-reveal-prop {
+    transform:scale(1,1);
 }
 
 footer {
