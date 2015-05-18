@@ -144,7 +144,7 @@ header {
     height: auto;
     width: auto;
     overflow: auto;
-
+    overflow:  hidden;
 }
 
 .panel-details{
@@ -249,7 +249,7 @@ header {
     height: 75px;
     float: left;
     display: inline-block;
-    margin: 9.375px;
+    margin: 9.372px;
     margin-bottom: 20px;
     position: relative;
     text-align: center;
@@ -260,7 +260,6 @@ header {
 }
 
 .app-detail {
-    display: inline-block;
     /*opacity: 0;*/
     position: absolute;
     height: 100%;
