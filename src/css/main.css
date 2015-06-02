@@ -98,18 +98,24 @@ textarea {
 
     color: white;
     font-size: 14px;
-    width: 100%;
+    width: 50%;
     display: table-cell; 
     vertical-align: middle
 }
 
 header {
-
-    display:table;
     background-color: #724CF9;
-    height: 65px;
-    width: 100%;
 
+}
+
+.nav-header {
+    display:table;
+    height: 65px;
+}
+
+.nav-links-container {
+    display: table-cell;
+    text-align: right;
 }
 
 .section-apps-panel {
@@ -226,17 +232,17 @@ header {
     display: table;
     width: 70px;
     height: 70px;
-    border: 5px solid rgba(26,28,39,0.07);
-    background-color: rgba(26,28,39,0.05);
+   /* border: 5px solid rgba(26,28,39,0.07); 
+    background-color: rgba(26,28,39,0.05);*/
     border-radius: 40px;
     margin-top: 100px;
     cursor: pointer;
     transition: all .1s ease-in-out;
-    box-shadow: 0px 0px 7px rgba(26,28,39,0.5);
+   /* box-shadow: 0px 0px 7px rgba(26,28,39,0.5);*/
 }
 
 #iphone_home_button:hover {
-    background-color: rgb(114,76,249);
+    /*background-color: rgb(114,76,249);*/
     transform: scale(1.5,1.5);
 }
 
@@ -256,6 +262,9 @@ header {
     border-radius: 10px;
     transition: 0.5s;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     background-color: rgba(26,28,39,0.5)
 }
 
@@ -298,6 +307,10 @@ header {
     transform:scale(1,1);
 }
 
+.text-right{
+    text-align: right;
+}
+
 footer {
     position: relative;
     margin-top: 30px;
@@ -311,6 +324,21 @@ footer {
 
 ul {
     list-style-type: none;
+    margin: 0px;
+}
+
+ul li {
+    display: inline;
+    padding: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #AD98F8;
+}
+
+ul li a:hover {
+    color: white;
 }
 
 i {

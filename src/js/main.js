@@ -177,7 +177,7 @@ function generateApps (total) {
 	        		break;
 
 			}
-			$("<div class='app-box'><div class='app-box-name'>"+screenCount+"</div></div>").clone().appendTo('.app-container');
+			$("<div class='app-box' style = 'background: url(img/appicon-demo.jpg);'><div class='app-box-name'>"+screenCount+"</div></div>").clone().appendTo('.app-container');
 		};
 
 }
